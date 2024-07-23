@@ -23,6 +23,7 @@ const customThemeLight = {
     success: '#4CAF50',
     warning: '#FB8C00',
     'clean-sky': '#E2EAEF',
+    'light-sage-green': 'A5B297',
   },
 }
 

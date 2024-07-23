@@ -6,10 +6,10 @@
           <v-col :cols="12" class="text-spacing-2 text-h6">
             Hello
           </v-col>
-          <v-col :cols="12" class="text-spacing text-h4 py-2">
+          <v-col :cols="12" class="text-spacing-1 text-h4 py-2">
             I'm Chanon Chanchamla
           </v-col>
-          <v-col :cols="12" class="text-spacing-2 text-h6">
+          <v-col :cols="12" class="text-spacing-1 text-h6">
             Front-End Developer.
           </v-col>
         </v-row>
