@@ -13,10 +13,6 @@
   border: thin solid #c5c5c5 !important
 }
 
-.text--olive-green {
-  color: #306060 !important;
-}
-
 .text-vertical {
   writing-mode: vertical-lr;
   text-orientation: mixed;
@@ -31,10 +27,18 @@
   transform: rotate(-90deg);
 }
 
-.text-spacing {
+.text-spacing-1 {
   letter-spacing: 0.075em !important;
 }
 
 .text-spacing-2 {
   letter-spacing: 0.1em !important;
+}
+
+.position-absolute.bottom {
+  bottom: 0;
+}
+
+.position-absolute.left {
+  left: 0;
 }
