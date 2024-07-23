@@ -13,5 +13,12 @@ module.exports = {
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    semi: 'off',
+    'arrow-body-style': 'off',
+    'vue/max-attributes-per-line': 'off',
+    'func-names': 'off',
+    'consistent-return': 'off',
+    'object-curly-newline': 'off',
+    'max-len': 'off',
   },
 };

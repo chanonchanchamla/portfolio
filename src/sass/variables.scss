@@ -1,0 +1,40 @@
+@use "vuetify/styles" with (
+  $body-font-family: "Kanit"
+);
+
+@font-face {
+  font-family: 'Kanit';
+  src: url('../assets/fonts/Kanit-Medium.ttf');
+  font-weight: 'normal';
+  font-style: 'normal';
+}
+
+.outlined {
+  border: thin solid #c5c5c5 !important
+}
+
+.text--olive-green {
+  color: #306060 !important;
+}
+
+.text-vertical {
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+}
+
+.text-rotate {
+  transform: rotate(180deg);
+}
+
+.text-only-rotate {
+  inline-size: fit-content;
+  transform: rotate(-90deg);
+}
+
+.text-spacing {
+  letter-spacing: 0.075em !important;
+}
+
+.text-spacing-2 {
+  letter-spacing: 0.1em !important;
+}

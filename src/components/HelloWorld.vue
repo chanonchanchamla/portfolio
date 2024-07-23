@@ -1,60 +1,63 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-router" target="_blank" rel="noopener">router</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-vuex" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
-  </div>
+  <v-container fluid class="pa-0 fill-height">
+    <v-row no-gutters>
+      <v-col :style="fixedHeadingHeight" :cols="12" :md="11" :offset-md="1" class="py-10 pt-md-0 px-10 px-md-0">
+        <v-row no-gutters class="fill-height" align-content="center" align-content-md="start">
+          <v-col :cols="12" class="text-spacing-2 text-h6">
+            Hello
+          </v-col>
+          <v-col :cols="12" class="text-spacing text-h4 py-2">
+            I'm Chanon Chanchamla
+          </v-col>
+          <v-col :cols="12" class="text-spacing-2 text-h6">
+            Front-End Developer.
+          </v-col>
+        </v-row>
+      </v-col>
+      <v-col :style="fixedProfileHeight" :cols="12" class="bg-clean-sky">
+        <v-row no-gutters justify="center" align="end" class="fill-height">
+          <v-img
+            :src="faceImage" :max-height="(height * 90) / 100"
+            height="85%" position="top center"
+          />
+        </v-row>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
+import { useDisplay } from 'vuetify'
+import faceImage from '@/assets/img5567.png'
+
 export default {
   name: 'HelloWorld',
-  props: {
-    msg: String,
+  data: () => ({
+    faceImage,
+    ...useDisplay(),
+  }),
+  computed: {
+    fixedHeadingHeight() {
+      const percent = this.mobile ? 35 : 30
+      let height = (this.height * percent) / 100
+      if (height <= 170 && this.mdAndUp) return ''
+      if (this.mdAndUp) height -= 64
+
+      return { height: `${height}px`, maxHeight: `${height}px` }
+    },
+    fixedProfileHeight() {
+      const percent = this.mobile ? 65 : 70
+      const height = (this.height * percent) / 100
+      if (height <= 400 && this.mdAndUp) return ''
+
+      return { height: `${height}px`, maxHeight: `${height}px` }
+    },
   },
-};
+}
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+<style scoped>
+.letter-spacing {
+  letter-spacing: 0.075em !important;
 }
 </style>
