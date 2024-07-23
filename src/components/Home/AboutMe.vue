@@ -8,14 +8,14 @@
           </v-col>
         </v-row>
         <v-row no-gutters class="py-8">
-          <v-col :col="12" :sm="12" :md="6" :lg="6" :xl="6" class="pr-0 pr-md-4">
+          <v-col :cols="12" :sm="12" :md="6" :lg="6" :xl="6" class="pr-0 pr-md-4">
             <p class="text-body-1 text-grey-darken-3 text-indent-1">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim mi neque,
               sed tincidunt felis interdum a. Vivamus vel nibh ac elit mollis malesuada vitae et arcu.
               Aenean tincidunt, justo et dapibus feugiat, velit augue bibendum augue, in maximus mi risus iaculis justo.
             </p>
           </v-col>
-          <v-col :col="12" :sm="12" :md="6" :lg="6" :xl="6" class="pt-8 pt-md-0 pl-0 pl-md-4">
+          <v-col :cols="12" :sm="12" :md="6" :lg="6" :xl="6" class="pt-8 pt-md-0 pl-0 pl-md-4">
             <p class="text-body-1 text-grey-darken-3 text-indent-1">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim mi neque,
               sed tincidunt felis interdum a. Vivamus vel nibh ac elit mollis malesuada vitae et arcu.
