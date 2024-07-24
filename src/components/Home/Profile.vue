@@ -3,13 +3,13 @@
     <v-row no-gutters>
       <v-col :style="fixedHeadingHeight" :cols="12" :md="11" :offset-md="1" class="py-10 pt-md-0 pl-10 px-md-0">
         <v-row no-gutters class="fill-height" align-content="center" align-content-md="start">
-          <v-col :cols="12" class="text-spacing-2 text-h6">
+          <v-col :cols="12" class="text-spacing-2 text-grey-darken-3 text-h6">
             Hello
           </v-col>
           <v-col :cols="12" class="text-spacing-1 text-h4 py-2">
             I'm Chanon Chanchamla
           </v-col>
-          <v-col :cols="12" class="text-spacing-1 text-h6">
+          <v-col :cols="12" class="text-spacing-1 text-grey-darken-3 text-h6">
             Front-End Developer.
           </v-col>
         </v-row>

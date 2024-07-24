@@ -11,7 +11,7 @@
       </v-col>
       <v-col cols="auto" class="text-center my-2">
         <v-btn flat color="background">
-          <span class="text-h6 text-body-1 text-grey-darken-2 text-spacing-1">Projects</span>
+          <span class="text-h6 text-body-1 text-grey-darken-2 text-spacing-1">Works</span>
         </v-btn>
       </v-col>
       <v-col cols="auto" class="text-center my-2">

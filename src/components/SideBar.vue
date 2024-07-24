@@ -21,7 +21,7 @@
           <span class="text-body-2 text-grey-darken-3 text-spacing-1">About me</span>
         </v-list-item>
         <v-list-item class="cursor-pointer">
-          <span class="text-body-2 text-grey-darken-3 text-spacing-1">Projects</span>
+          <span class="text-body-2 text-grey-darken-3 text-spacing-1">Works</span>
         </v-list-item>
         <v-list-item class="cursor-pointer">
           <span class="text-body-2 text-grey-darken-3 text-spacing-1">Contact</span>

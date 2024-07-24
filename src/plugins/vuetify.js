@@ -1,9 +1,12 @@
 // Styles
-import '@mdi/font/css/materialdesignicons.css'
+// import '@mdi/font/css/materialdesignicons.css'
+// eslint-disable-next-line
+import '@fortawesome/fontawesome-free/css/all.css'
 import '@/sass/variables.scss'
 
 // Vuetify
 import { createVuetify } from 'vuetify'
+import { aliases, fa } from 'vuetify/iconsets/fa'
 
 const customThemeLight = {
   dark: false,
@@ -24,11 +27,18 @@ const customThemeLight = {
     warning: '#FB8C00',
     'clean-sky': '#E2EAEF',
     'light-sage-green': 'A5B297',
+    'green-dried-herb': '#8B8762',
+    'light-green-dried-herb': '#82AFAF',
   },
 }
 
 export default createVuetify({
   theme: {
+    defaultSet: 'fa',
+    aliases,
+    sets: {
+      fa,
+    },
     defaultTheme: 'customThemeLight',
     themes: {
       customThemeLight,
