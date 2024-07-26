@@ -1,13 +1,13 @@
 <template>
   <v-container id="aboutme" fluid class="px-0 py-16">
     <v-row no-gutters>
-      <v-col :cols="12" :md="11" :offset-md="1" class="pl-10 pr-5 pl-md-6 pr-md-16">
+      <v-col :cols="12" :sm="11" :offset-sm="1" class="pl-10 pr-0 pl-sm-6 pr-sm-6 pr-md-16">
         <v-row no-gutters>
           <v-col :cols="12" class="text-spacing-1 text-h4 text-grey-darken-3 text-center pt-12 pb-8">
             About me
           </v-col>
         </v-row>
-        <v-row no-gutters class="py-8">
+        <v-row no-gutters class="py-6">
           <v-col :cols="12" :sm="12" :md="6" :lg="6" :xl="6" class="pr-0 pr-md-6">
             <p class="text-body-1 text-grey-darken-2 text-indent-1">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim mi neque,
