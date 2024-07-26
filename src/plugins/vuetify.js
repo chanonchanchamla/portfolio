@@ -26,9 +26,12 @@ const customThemeLight = {
     success: '#4CAF50',
     warning: '#FB8C00',
     'clean-sky': '#E2EAEF',
-    'light-sage-green': 'A5B297',
-    'green-dried-herb': '#8B8762',
-    'light-green-dried-herb': '#82AFAF',
+    'light-sage-green': '#A5B297',
+    'green-dried-herb': '#556246',
+    'light-green-teal': '#82AFAF',
+    'light-olive': '#808000',
+    'light-brown': '#B77332',
+    'dark-olive': '#5F6F52',
   },
 }
 
