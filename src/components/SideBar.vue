@@ -9,7 +9,7 @@
         <v-col :cols="12" class="text-right">
           <v-btn icon flat size="small" color="background" @click="menu = !menu">
             <v-icon size="24" color="grey-darken-3">
-              mdi-drag-horizontal-variant
+              fas fa-grip-lines
             </v-icon>
           </v-btn>
         </v-col>
