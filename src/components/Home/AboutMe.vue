@@ -1,9 +1,9 @@
 <template>
-  <v-container id="aboutme" fluid class="px-0 py-16">
+  <v-container id="aboutme" fluid class="px-0 pb-8 pt-16">
     <v-row no-gutters>
       <v-col :cols="12" :sm="11" :offset-sm="1" class="pl-10 pr-0 pl-sm-6 pr-sm-6 pr-md-16">
         <v-row no-gutters>
-          <v-col :cols="12" class="text-spacing-1 text-h4 text-grey-darken-3 text-center pt-12 pb-8">
+          <v-col :cols="12" class="text-spacing-1 text-h3 text-grey-darken-3 text-center pt-12 pb-8">
             About me
           </v-col>
         </v-row>

@@ -1,14 +1,14 @@
 <template>
-  <v-container id="skill" fluid class="pa-0">
+  <v-container id="skill" fluid class="px-0 py-8">
     <v-row no-gutters>
       <v-col :cols="12" :sm="11" :offset-sm="1" class="pl-10 pr-0 pl-sm-0 pr-sm-0 pr-md-10">
         <v-row no-gutters>
-          <v-col :cols="12" class="text-spacing-1 text-h4 text-grey-darken-3 text-center pt-6">
+          <v-col :cols="12" class="text-spacing-1 text-h3 text-grey-darken-3 text-center pt-6">
             Skills
           </v-col>
-          <v-col :cols="12" class="py-6">
+          <v-col :cols="12" class="py-4">
             <v-row no-gutters justify="center">
-              <v-col :cols="12" :sm="6" :md="4" class="py-5">
+              <v-col :cols="12" :sm="6" :md="4" class="py-7">
                 <v-row no-gutters class="px-0 px-sm-6">
                   <v-col :cols="12" class="text-center py-3">
                     <v-icon :size="40" color="light-green-teal">fas fa-pen-ruler</v-icon>
@@ -28,13 +28,13 @@
                   </v-col>
                 </v-row>
               </v-col>
-              <v-col :cols="12" :sm="6" :md="4" class="py-5">
+              <v-col :cols="12" :sm="6" :md="4" class="py-7">
                 <v-row no-gutters class="px-0 px-sm-6">
                   <v-col :cols="12" class="text-center py-3">
                     <v-icon :size="40" color="green-dried-herb">fas fa-code</v-icon>
                   </v-col>
                   <v-col :cols="12" class="text-center text-h6 text-grey-darken-2 pt-4 pb-2">
-                    เขียนเว็บไซต์
+                    เขียน Code
                   </v-col>
                   <v-col :cols="12" class="text-center text-body-2 text-grey pb-2">
                     CODING
@@ -48,7 +48,7 @@
                   </v-col>
                 </v-row>
               </v-col>
-              <v-col :cols="12" :sm="6" :md="4" class="py-5">
+              <v-col :cols="12" :sm="6" :md="4" class="py-7">
                 <v-row no-gutters class="px-0 px-sm-6">
                   <v-col :cols="12" class="text-center py-3">
                     <v-icon :size="40" color="light-brown">fas fa-code-branch</v-icon>
@@ -67,7 +67,7 @@
                   </v-col>
                 </v-row>
               </v-col>
-              <v-col :cols="12" :sm="6" :md="4" class="py-5">
+              <v-col :cols="12" :sm="6" :md="4" class="py-7">
                 <v-row no-gutters class="px-0 px-sm-6">
                   <v-col :cols="12" class="text-center py-3">
                     <v-icon :size="40" color="light-olive">fas fa-database</v-icon>
