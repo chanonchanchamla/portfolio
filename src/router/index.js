@@ -7,6 +7,11 @@ const routes = [
     name: 'home',
     component: HomeView,
   },
+  {
+    path: '/works/:projectName',
+    name: 'works',
+    component: () => import('@/views/WorksView.vue'),
+  },
 ];
 
 const router = createRouter({

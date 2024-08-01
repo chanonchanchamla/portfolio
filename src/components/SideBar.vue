@@ -30,7 +30,7 @@
     </v-slide-x-transition>
     <template v-slot:append>
       <v-row no-gutters class="py-3">
-        <v-col :cols="auto" class="text-subheading text-spacing-2 text-rotate text-vertical text-grey-darken-2">
+        <v-col cols="auto" class="text-subheading text-spacing-2 text-rotate text-vertical text-grey-darken-2">
           CHANON's
         </v-col>
       </v-row>

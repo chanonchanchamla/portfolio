@@ -1,9 +1,7 @@
 <template>
   <v-app>
     <v-main>
-      <v-slide-x-transition mode="out-in">
-        <router-view key="content" />
-      </v-slide-x-transition>
+      <router-view key="content" />
     </v-main>
     <app-bar />
     <side-bar />

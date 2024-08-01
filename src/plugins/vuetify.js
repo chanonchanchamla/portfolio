@@ -1,5 +1,4 @@
 // Styles
-// import '@mdi/font/css/materialdesignicons.css'
 // eslint-disable-next-line
 import '@fortawesome/fontawesome-free/css/all.css'
 import '@/sass/variables.scss'
@@ -11,7 +10,7 @@ import { aliases, fa } from 'vuetify/iconsets/fa'
 const customThemeLight = {
   dark: false,
   colors: {
-    background: '#F6F6F6',
+    background: '#FDFDFD',
     surface: '#FFFFFF',
     'surface-bright': '#FFFFFF',
     'surface-light': '#EEEEEE',
@@ -32,6 +31,7 @@ const customThemeLight = {
     'light-olive': '#808000',
     'light-brown': '#B77332',
     'dark-olive': '#5F6F52',
+    'green-olive': '#606C38',
   },
 }
 

@@ -24,7 +24,7 @@
                     ออกแบบอย่างเรียบง่าย เป็นระเบียบ ใช้งานได้อย่างง่ายดาย
                   </v-col>
                   <v-col :cols="12" class="text-center text-body-2 text-grey">
-                    :: Figma, User Centered Design, Visual Design, Human Computer Interaction
+                    :: Figma, User Centered Design, Visual Design, Human Computer Interaction, Responsive Web Design
                   </v-col>
                 </v-row>
               </v-col>
@@ -44,7 +44,7 @@
                     sed tincidunt felis interdum a
                   </v-col>
                   <v-col :cols="12" class="text-center text-body-2 text-grey">
-                    :: Vue.JS, JavaScript, HTML, CSS, Vuetify, Bootstrap, Responsive Web Design
+                    :: Vue.JS, JavaScript, HTML, CSS, Vuetify, Bootstrap, Responsive Web
                   </v-col>
                 </v-row>
               </v-col>
@@ -70,7 +70,7 @@
               <v-col :cols="12" :sm="6" :md="4" class="py-7">
                 <v-row no-gutters class="px-0 px-sm-6">
                   <v-col :cols="12" class="text-center py-3">
-                    <v-icon :size="40" color="light-olive">fas fa-database</v-icon>
+                    <v-icon :size="40" color="green-olive">fas fa-database</v-icon>
                   </v-col>
                   <v-col :cols="12" class="text-center text-h6 text-grey-darken-2 pt-4 pb-2">
                     ฐานข้อมูล
