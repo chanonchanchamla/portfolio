@@ -43,14 +43,14 @@
   text-indent: 3m;
 }
 
-.position-absolute.top {
+.position-absolute.top, .position-fixed.top {
   top: 0;
 }
 
-.position-absolute.bottom {
+.position-absolute.bottom, .position-fixed.bottom {
   bottom: 0;
 }
 
-.position-absolute.left {
+.position-absolute.left, .position-fixed.left {
   left: 0;
 }

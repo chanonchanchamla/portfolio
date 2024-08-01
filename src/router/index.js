@@ -8,9 +8,24 @@ const routes = [
     component: HomeView,
   },
   {
-    path: '/works/:projectName',
-    name: 'works',
-    component: () => import('@/views/WorksView.vue'),
+    path: '/works/cdt-hub',
+    name: 'cdthub',
+    component: () => import('@/views/ProjectCDTHub.vue'),
+  },
+  {
+    path: '/works/linkage-2',
+    name: 'linkage',
+    component: () => import('@/views/ProjectLinkage.vue'),
+  },
+  {
+    path: '/works/officer',
+    name: 'officer',
+    component: () => import('@/views/ProjectOfficer.vue'),
+  },
+  {
+    path: '/works/thaid',
+    name: 'cors',
+    component: () => import('@/views/ProjectCors.vue'),
   },
 ];
 
