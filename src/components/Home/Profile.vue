@@ -1,8 +1,8 @@
 <template>
   <v-container id="profile" fluid class="pa-0">
     <v-row no-gutters>
-      <v-col :style="fixedHeadingHeight" :cols="12" :md="11" :offset-md="1" class="py-10 pt-md-0 pl-10 px-md-0">
-        <v-row no-gutters class="fill-height" align-content="center" align-content-md="start">
+      <v-col :style="fixedHeadingHeight" :cols="12" :md="11" :offset-md="1" class="pl-10 px-md-0">
+        <v-row no-gutters class="fill-height" align-content="start" align-content-md="start">
           <v-col :cols="12" class="text-spacing-2 text-grey-darken-3 text-h6">
             Hello
           </v-col>
@@ -41,7 +41,7 @@ export default {
       const percent = this.mobile ? 35 : 30
       let height = (this.height * percent) / 100
       if (height <= 170 && this.mdAndUp) return ''
-      if (this.mdAndUp) height -= 64
+      height -= 64
 
       return { height: `${height}px`, maxHeight: `${height}px` }
     },

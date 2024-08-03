@@ -3,8 +3,8 @@
     <v-main>
       <router-view key="content" />
     </v-main>
-    <app-bar />
     <side-bar />
+    <app-bar />
   </v-app>
 </template>
 

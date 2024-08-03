@@ -1,5 +1,5 @@
 <template>
-  <v-container id="contact" fluid class="px-0 py-8">
+  <v-container ref="contact" fluid class="px-0 py-8">
     <v-row no-gutters>
       <v-col :cols="12" :sm="11" :offset-sm="1" class="pl-10 pr-0 pl-sm-0 pr-sm-0 pr-md-10">
         <v-row no-gutters>
@@ -26,11 +26,21 @@
 
 <script>
 import { useDisplay } from 'vuetify'
+import { mapMutations } from 'vuex'
 
 export default {
   name: 'MyContact',
   data: () => ({
     ...useDisplay(),
   }),
+  mounted() {
+    const { offsetTop } = this.$refs.contact.$el
+    this.setPositionContact(offsetTop)
+  },
+  methods: {
+    ...mapMutations({
+      setPositionContact: 'setPositionContact',
+    }),
+  },
 }
 </script>

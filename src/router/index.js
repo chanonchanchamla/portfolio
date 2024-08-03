@@ -27,6 +27,16 @@ const routes = [
     name: 'cors',
     component: () => import('@/views/ProjectCors.vue'),
   },
+  {
+    path: '/works/hospital-employee',
+    name: 'gemp',
+    component: () => import('@/views/ProjectGEMP.vue'),
+  },
+  {
+    path: '/works/civil-registration',
+    name: 'tr31',
+    component: () => import('@/views/ProjectTR31.vue'),
+  },
 ];
 
 const router = createRouter({

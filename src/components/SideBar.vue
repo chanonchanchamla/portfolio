@@ -17,19 +17,19 @@
     </template>
     <v-slide-x-transition mode="out-in">
       <v-list v-if="menu && smAndDown" density="compact" nav>
-        <v-list-item class="cursor-pointer">
+        <v-list-item class="cursor-pointer" @click="scrollToAboutme()">
           <span class="text-body-2 text-grey-darken-3 text-spacing-1">About me</span>
         </v-list-item>
-        <v-list-item class="cursor-pointer">
+        <v-list-item class="cursor-pointer" @click="scrollToWorks()">
           <span class="text-body-2 text-grey-darken-3 text-spacing-1">Works</span>
         </v-list-item>
-        <v-list-item class="cursor-pointer">
+        <v-list-item class="cursor-pointer" @click="scrollToContact()">
           <span class="text-body-2 text-grey-darken-3 text-spacing-1">Contact</span>
         </v-list-item>
       </v-list>
     </v-slide-x-transition>
     <template v-slot:append>
-      <v-row no-gutters class="py-3">
+      <v-row no-gutters class="py-3" justify="end">
         <v-col cols="auto" class="text-subheading text-spacing-2 text-rotate text-vertical text-grey-darken-2">
           CHANON's
         </v-col>
@@ -40,6 +40,7 @@
 
 <script>
 import { useDisplay } from 'vuetify'
+import { mapState } from 'vuex'
 
 export default {
   name: 'SideBar',
@@ -47,5 +48,21 @@ export default {
     ...useDisplay(),
     menu: false,
   }),
+  computed: {
+    ...mapState({
+      position: (state) => state.position,
+    }),
+  },
+  methods: {
+    scrollToAboutme() {
+      document.documentElement.scrollTo(0, this.position.aboutme)
+    },
+    scrollToWorks() {
+      document.documentElement.scrollTo(0, this.position.works)
+    },
+    scrollToContact() {
+      document.documentElement.scrollTo(0, this.position.contact)
+    },
+  },
 }
 </script>

@@ -54,3 +54,11 @@
 .position-absolute.left, .position-fixed.left {
   left: 0;
 }
+
+.bring-to-top {
+  z-index: 9999;
+}
+
+.rounded-smooth {
+  border-radius: 20px;
+}

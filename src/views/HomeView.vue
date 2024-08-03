@@ -8,6 +8,7 @@
 
 <script>
 import { defineComponent } from 'vue';
+import { mapState } from 'vuex';
 import Profile from '@/components/Home/Profile.vue'
 import AboutMe from '@/components/Home/AboutMe.vue'
 import Skills from '@/components/Home/Skills.vue'
@@ -22,6 +23,14 @@ export default defineComponent({
     Skills,
     Works,
     Contact,
+  },
+  computed: {
+    ...mapState({
+      lastScroll: (state) => state.lastScroll,
+    }),
+  },
+  mounted() {
+    document.documentElement.scrollTo(0, this.lastScroll)
   },
 });
 </script>

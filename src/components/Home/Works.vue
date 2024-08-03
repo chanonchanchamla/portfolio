@@ -1,5 +1,5 @@
 <template>
-  <v-container id="works" fluid class="px-0 py-8">
+  <v-container ref="works" fluid class="px-0 py-8">
     <v-row no-gutters>
       <v-col :cols="12" :sm="11" :offset-sm="1" class="pl-10 pr-0 pl-sm-0 pr-sm-0 pr-md-10">
         <v-row no-gutters>
@@ -12,8 +12,8 @@
                 <v-row no-gutters justify="center" class="px-0 px-sm-6">
                   <v-col :cols="12" class="text-center py-3">
                     <v-img
-                      :src="Linkage" aspect-ratio="1.6" cover position="top left"
-                      width="80%" class="outlined rounded ma-auto cursor-pointer"
+                      src="@/assets/linkage-desktop/5.jpg" aspect-ratio="1.6" cover position="top left"
+                      width="80%" class="elevation-2 rounded ma-auto cursor-pointer"
                       @click="go('linkage')"
                     />
                   </v-col>
@@ -33,8 +33,8 @@
                 <v-row no-gutters class="px-0 px-sm-6" justify="center">
                   <v-col :cols="12" class="text-center py-3">
                     <v-img
-                      :src="ERP" aspect-ratio="1.6" cover position="top left"
-                      width="80%" class="outlined rounded ma-auto cursor-pointer"
+                      src="@/assets/erp-desktop/1.jpg" aspect-ratio="1.6" cover position="top left"
+                      width="80%" class="elevation-2 rounded ma-auto cursor-pointer"
                       @click="go('cdthub')"
                     />
                   </v-col>
@@ -54,8 +54,8 @@
                 <v-row no-gutters class="px-0 px-sm-6" justify="center">
                   <v-col :cols="12" class="text-center py-3">
                     <v-img
-                      :src="Officer" aspect-ratio="1.6" cover position="top left"
-                      width="80%" class="outlined rounded ma-auto cursor-pointer"
+                      src="@/assets/officer-desktop/1.jpg" aspect-ratio="1.6" cover position="top left"
+                      width="80%" class="elevation-2 rounded ma-auto cursor-pointer"
                       @click="go('officer')"
                     />
                   </v-col>
@@ -72,30 +72,32 @@
                 </v-row>
               </v-col>
               <v-col :cols="12" :sm="6" :lg="4" class="py-5">
-                <v-row no-gutters class="px-0 px-sm-6">
+                <v-row no-gutters class="px-0 px-sm-6" justify="center">
                   <v-col :cols="12" class="text-center py-3">
                     <v-img
-                      :src="GEMP" aspect-ratio="1.6" cover position="top left"
-                      width="80%" class="outlined rounded ma-auto cursor-pointer"
+                      src="@/assets/gemp-mobile/17.png" aspect-ratio="1.6" cover position="top left"
+                      width="80%" class="elevation-2 rounded ma-auto cursor-pointer"
+                      @click="go('gemp')"
                     />
                   </v-col>
-                  <v-col :cols="12" class="text-center text-h6 text-grey-darken-2 pt-4">
-                    <span class="cursor-pointer">ทะเบียนเจ้าหน้าที่โรงพยาบาล</span>
+                  <v-col
+                    :cols="12"
+                    class="text-center text-h6 text-grey-darken-2 pt-4 cursor-pointer"
+                    @click="go('gemp')"
+                  >
+                    <span>ทะเบียนเจ้าหน้าที่โรงพยาบาล</span>
                   </v-col>
                   <v-col :cols="12" class="text-center text-body-2 text-grey py-2">
                     2023
                   </v-col>
-                  <!-- <v-col :cols="12" class="text-center text-body-2 text-grey-darken-1 py-3">
-                    ทะเบียนเจ้าหน้าที่โรงพยาบาล เพิ่ม ลบ แก้ไข ตรวจสอบข้อมูล และอนุมัติรายการโดยผู้ควบคุม
-                  </v-col> -->
                 </v-row>
               </v-col>
               <v-col :cols="12" :sm="6" :lg="4" class="py-5">
                 <v-row no-gutters class="px-0 px-sm-6" justify="center">
                   <v-col :cols="12" class="text-center py-3">
                     <v-img
-                      :src="Cerors" aspect-ratio="1.6" cover position="top left"
-                      width="80%" class="outlined rounded ma-auto cursor-pointer"
+                      src="@/assets/cors-desktop/1.jpg" aspect-ratio="1.6" cover position="top left"
+                      width="80%" class="elevation-2 rounded ma-auto cursor-pointer"
                       @click="go('cors')"
                     />
                   </v-col>
@@ -112,22 +114,24 @@
                 </v-row>
               </v-col>
               <v-col :cols="12" :sm="6" :lg="4" class="py-5">
-                <v-row no-gutters class="px-0 px-sm-6">
+                <v-row no-gutters class="px-0 px-sm-6" justify="center">
                   <v-col :cols="12" class="text-center py-3">
                     <v-img
-                      :src="Tr31" aspect-ratio="1.6" cover position="top left"
-                      width="80%" class="outlined rounded ma-auto cursor-pointer"
+                      src="@/assets/tr31-desktop/1.png" aspect-ratio="1.6" cover position="top left"
+                      width="80%" class="elevation-2 rounded ma-auto cursor-pointer"
+                      @click="go('tr31')"
                     />
                   </v-col>
-                  <v-col :cols="12" class="text-center text-h6 text-grey-darken-2 pt-4">
-                    <span class="cursor-pointer">ระบบทะเบียนราษฎร</span>
+                  <v-col
+                    :cols="12"
+                    class="text-center text-h6 text-grey-darken-2 pt-4 cursor-pointer"
+                    @click="go('tr31')"
+                  >
+                    <span>ระบบทะเบียนราษฎร</span>
                   </v-col>
                   <v-col :cols="12" class="text-center text-body-2 text-grey py-2">
                     2018 - 2024
                   </v-col>
-                  <!-- <v-col :cols="12" class="text-center text-body-2 text-grey-darken-1 py-3">
-                    บริการประชาชนผ่านทางสำนักทะเบียน เช่น การออกคำร้องทะเบียนราษฎร, การแจ้งเกิด, การแจ้งตาย, การแจ้งย้ายที่อยู่, การแก้ไขข้อมูล, การเพิ่มชื่อในทะเบียนบ้าน ฯลฯ
-                  </v-col> -->
                 </v-row>
               </v-col>
               <!-- <v-col :cols="12" :sm="6" :lg="4" class="py-5">
@@ -159,28 +163,25 @@
 
 <script>
 import { useDisplay } from 'vuetify'
-import Tr31 from '@/assets/tr31-1.png'
-import Cerors from '@/assets/cors-1.png'
-import Officer from '@/assets/officer-desktop-1.png'
-import Linkage from '@/assets/linkage2-1.png'
-import ERP from '@/assets/erp-desktop/1.jpg'
-import GEMP from '@/assets/gemp-1.png'
-import DocScanner from '@/assets/tr31-4.jpg'
+import { mapMutations } from 'vuex'
 
 export default {
   name: 'MyWorks',
   data: () => ({
     ...useDisplay(),
-    Tr31,
-    Cerors,
-    Officer,
-    Linkage,
-    ERP,
-    GEMP,
-    DocScanner,
   }),
+  mounted() {
+    const { offsetTop } = this.$refs.works.$el
+    this.setPositionWorks(offsetTop)
+  },
   methods: {
+    ...mapMutations({
+      setLastScroll: 'setLastScroll',
+      setPositionWorks: 'setPositionWorks',
+    }),
     go(project) {
+      const { scrollTop } = document.documentElement
+      this.setLastScroll(scrollTop)
       this.$router.push({
         name: project,
       })
