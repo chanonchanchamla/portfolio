@@ -1,5 +1,5 @@
 <template>
-  <v-container ref="works" fluid class="px-0 py-8">
+  <v-container ref="works" v-resize="setPosition" fluid class="px-0 py-8">
     <v-row no-gutters>
       <v-col :cols="12" :sm="11" :offset-sm="1" class="pl-10 pr-0 pl-sm-0 pr-sm-0 pr-md-10">
         <v-row no-gutters>
@@ -171,14 +171,18 @@ export default {
     ...useDisplay(),
   }),
   mounted() {
-    const { offsetTop } = this.$refs.works.$el
-    this.setPositionWorks(offsetTop)
+    this.setPosition()
   },
   methods: {
     ...mapMutations({
       setLastScroll: 'setLastScroll',
       setPositionWorks: 'setPositionWorks',
     }),
+    setPosition() {
+      const { offsetTop } = this.$refs.works.$el
+      if (this.mdAndUp) return this.setPositionWorks(offsetTop)
+      this.setPositionWorks(offsetTop + 100)
+    },
     go(project) {
       const { scrollTop } = document.documentElement
       this.setLastScroll(scrollTop)

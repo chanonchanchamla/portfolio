@@ -40,7 +40,7 @@
 
 <script>
 import { useDisplay } from 'vuetify'
-import { mapState } from 'vuex'
+import { mapState, mapMutations } from 'vuex'
 
 export default {
   name: 'SideBar',
@@ -52,16 +52,34 @@ export default {
     ...mapState({
       position: (state) => state.position,
     }),
+    routeHome() {
+      console.log(this.$route.name)
+      const { name } = this.$route
+      return name === 'home'
+    },
   },
   methods: {
+    ...mapMutations({
+      setScrollToAfterEach: 'setScrollToAfterEach',
+    }),
+    goBackAndScroll(target) {
+      this.setScrollToAfterEach(target)
+      this.$router.push({ name: 'home' })
+    },
     scrollToAboutme() {
-      document.documentElement.scrollTo(0, this.position.aboutme)
+      const { aboutme } = this.position
+      if (this.routeHome === false) return this.goBackAndScroll('aboutme')
+      document.documentElement.scrollTo(0, aboutme)
     },
     scrollToWorks() {
-      document.documentElement.scrollTo(0, this.position.works)
+      const { works } = this.position
+      if (this.routeHome === false) return this.goBackAndScroll('works')
+      document.documentElement.scrollTo(0, works)
     },
     scrollToContact() {
-      document.documentElement.scrollTo(0, this.position.contact)
+      const { contact } = this.position
+      if (this.routeHome === false) return this.goBackAndScroll('contact')
+      document.documentElement.scrollTo(0, contact)
     },
   },
 }

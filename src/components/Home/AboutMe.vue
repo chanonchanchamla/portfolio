@@ -1,5 +1,5 @@
 <template>
-  <v-container ref="aboutme" fluid class="px-0 pb-8 pt-16">
+  <v-container ref="aboutme" v-resize="setPosition" fluid class="px-0 pb-8 pt-16">
     <v-row no-gutters>
       <v-col :cols="12" :sm="11" :offset-sm="1" class="pl-10 pr-0 pl-sm-6 pr-sm-6 pr-md-16">
         <v-row no-gutters>
@@ -48,13 +48,17 @@ export default {
     ...useDisplay(),
   }),
   mounted() {
-    const { offsetTop } = this.$refs.aboutme.$el
-    this.setPositionAboutme(offsetTop)
+    this.setPosition()
   },
   methods: {
     ...mapMutations({
       setPositionAboutme: 'setPositionAboutme',
     }),
+    setPosition() {
+      const { offsetTop } = this.$refs.aboutme.$el
+      if (this.mdAndUp) return this.setPositionAboutme(offsetTop)
+      this.setPositionAboutme(offsetTop + 50)
+    },
   },
 }
 </script>

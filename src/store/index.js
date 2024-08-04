@@ -8,6 +8,7 @@ export default createStore({
       works: 0,
       contact: 0,
     },
+    scrollToAfterEach: null,
   },
   getters: {
   },
@@ -23,6 +24,9 @@ export default createStore({
     },
     setPositionContact(state, position) {
       state.position.contact = position
+    },
+    setScrollToAfterEach(state, target) {
+      state.scrollToAfterEach = target
     },
   },
   actions: {

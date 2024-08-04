@@ -1,9 +1,9 @@
 <template>
-  <profile />
-  <about-me />
+  <profile ref="profile" />
+  <about-me ref="aboutme" />
   <skills />
-  <works />
-  <contact />
+  <works ref="works" />
+  <contact ref="contact" />
 </template>
 
 <script>
@@ -27,10 +27,23 @@ export default defineComponent({
   computed: {
     ...mapState({
       lastScroll: (state) => state.lastScroll,
+      scrollToAfterEach: (state) => state.scrollToAfterEach,
+      position: (state) => state.position,
     }),
   },
   mounted() {
-    document.documentElement.scrollTo(0, this.lastScroll)
+    console.log(this.$refs)
+    if (this.scrollToAfterEach == null) {
+      return this.scrollToPosition(this.lastScroll)
+    }
+
+    const { offsetTop } = this.$refs[this.scrollToAfterEach].$el
+    return this.scrollToPosition(offsetTop - 100)
+  },
+  methods: {
+    scrollToPosition(position) {
+      document.documentElement.scrollTo(0, position)
+    },
   },
 });
 </script>
