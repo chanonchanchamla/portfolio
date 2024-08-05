@@ -1,13 +1,16 @@
 <template>
   <v-container id="details" fluid class="px-0 py-0 position-relative">
-    <v-col
-      :class="smAndDown ? 'top left bring-to-top' : ''"
-      cols="auto" class="py-3 px-2 px-md-4 px-lg-6 py-md-0 position-fixed"
-    >
-      <v-btn flat icon size="small" @click="back()">
-        <v-icon  size="24" color="grey-darken-2">fas fa-angle-left</v-icon>
-      </v-btn>
-    </v-col>
+    <v-fade-transition>
+      <v-col
+        v-if="displayBackButton"
+        :class="smAndDown ? 'top left bring-to-top' : ''"
+        cols="auto" class="py-3 px-2 px-md-4 px-lg-6 py-md-0 position-fixed"
+      >
+        <v-btn flat icon size="small" @click="back()">
+          <v-icon  size="24" color="grey-darken-2">fas fa-angle-left</v-icon>
+        </v-btn>
+      </v-col>
+    </v-fade-transition>
     <v-row no-gutters>
       <v-col :cols="12" :sm="11" :offset-sm="1" class="pl-10 pr-1 pl-sm-0 pr-sm-6 pr-md-14 pb-7 pb-md-16">
         <v-row no-gutters>
@@ -94,7 +97,13 @@ export default {
   name: 'ProjectCors',
   data: () => ({
     ...useDisplay(),
+    displayBackButton: false,
   }),
+  mounted() {
+    setTimeout(() => {
+      this.displayBackButton = true
+    }, 1000)
+  },
   methods: {
     back() {
       this.$router.replace({ name: 'home' })

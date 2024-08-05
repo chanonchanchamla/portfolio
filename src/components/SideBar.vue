@@ -70,7 +70,10 @@ export default {
       this.menu = false
       if (this.routeHome === false) return this.goBackAndScroll('aboutme')
       setTimeout(() => {
-        document.documentElement.scrollTo(0, aboutme)
+        window.scrollTo({
+          top: aboutme,
+          behavior: 'smooth',
+        })
       }, 300)
     },
     scrollToWorks() {
@@ -78,7 +81,10 @@ export default {
       this.menu = false
       if (this.routeHome === false) return this.goBackAndScroll('works')
       setTimeout(() => {
-        document.documentElement.scrollTo(0, works)
+        window.scrollTo({
+          top: works,
+          behavior: 'smooth',
+        })
       }, 300)
     },
     scrollToContact() {
@@ -86,7 +92,10 @@ export default {
       this.menu = false
       if (this.routeHome === false) return this.goBackAndScroll('contact')
       setTimeout(() => {
-        document.documentElement.scrollTo(0, contact)
+        window.scrollTo({
+          top: contact,
+          behavior: 'smooth',
+        })
       }, 300)
     },
   },

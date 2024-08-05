@@ -59,17 +59,26 @@ export default {
     scrollToAboutme() {
       const { aboutme } = this.position
       if (this.routeHome === false) return this.goBackAndScroll('aboutme')
-      document.documentElement.scrollTo(0, aboutme)
+      window.scrollTo({
+        top: aboutme,
+        behavior: 'smooth',
+      })
     },
     scrollToWorks() {
       const { works } = this.position
       if (this.routeHome === false) return this.goBackAndScroll('works')
-      document.documentElement.scrollTo(0, works)
+      window.scrollTo({
+        top: works,
+        behavior: 'smooth',
+      })
     },
     scrollToContact() {
       const { contact } = this.position
       if (this.routeHome === false) return this.goBackAndScroll('contact')
-      document.documentElement.scrollTo(0, contact)
+      window.scrollTo({
+        top: contact,
+        behavior: 'smooth',
+      })
     },
   },
 }
