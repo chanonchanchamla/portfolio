@@ -1,7 +1,13 @@
 <template>
   <v-app>
     <v-main>
-      <router-view key="content" />
+      <router-view v-slot="{ Component, route }">
+        <v-slide-x-transition mode="out-in">
+          <div :key="route.name">
+            <component :is="Component" />
+          </div>
+        </v-slide-x-transition>
+      </router-view>
     </v-main>
     <side-bar />
     <app-bar />

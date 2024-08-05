@@ -10,16 +10,13 @@
             <v-row no-gutters justify="center">
               <v-col :cols="12" :sm="6" :md="4" class="py-7">
                 <v-row no-gutters class="px-0 px-sm-6">
-                  <v-col :cols="12" class="text-center py-3">
-                    <v-icon :size="40" color="light-green-teal">fas fa-pen-ruler</v-icon>
-                  </v-col>
-                  <v-col :cols="12" class="text-center text-h6 text-grey-darken-2 pt-4 pb-2">
-                    สร้างสรรค์ UX/UI
-                  </v-col>
-                  <v-col :cols="12" class="text-center text-body-2 text-grey pb-2">
+                  <v-col :cols="12" class="text-center text-h6 text-grey-darken-1 py-3">
                     DESIGN
                   </v-col>
-                  <v-col :cols="12" class="text-center text-body-1 text-grey-darken-1 py-3">
+                  <v-col :cols="12" class="text-center pt-5 pb-6">
+                    <v-icon :size="40" color="grey-darken-1">fas fa-pen-ruler</v-icon>
+                  </v-col>
+                  <v-col :cols="12" class="text-center text-body-1 text-grey-darken-2 py-3">
                     ออกแบบ UX/UI โดยคำนึงถึงความพึงพอใจของผู้ใช้งานเป็นหลัก
                     ออกแบบอย่างเรียบง่าย เป็นระเบียบ ใช้งานได้อย่างง่ายดาย
                   </v-col>
@@ -30,18 +27,14 @@
               </v-col>
               <v-col :cols="12" :sm="6" :md="4" class="py-7">
                 <v-row no-gutters class="px-0 px-sm-6">
-                  <v-col :cols="12" class="text-center py-3">
-                    <v-icon :size="40" color="green-dried-herb">fas fa-code</v-icon>
-                  </v-col>
-                  <v-col :cols="12" class="text-center text-h6 text-grey-darken-2 pt-4 pb-2">
-                    เขียน Code
-                  </v-col>
-                  <v-col :cols="12" class="text-center text-body-2 text-grey pb-2">
+                  <v-col :cols="12" class="text-center text-h6 text-grey-darken-1 py-3">
                     CODING
                   </v-col>
-                  <v-col :cols="12" class="text-center text-body-1 text-grey-darken-1 py-3">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim mi neque,
-                    sed tincidunt felis interdum a
+                  <v-col :cols="12" class="text-center pt-5 pb-6">
+                    <v-icon :size="40" color="grey-darken-1">fas fa-code</v-icon>
+                  </v-col>
+                  <v-col :cols="12" class="text-center text-body-1 text-grey-darken-2 py-3">
+                    เข้าใจหลักการออกแบบ นำมาใช้ Coding อย่างพิถีพิถัน โครงสร้าง Code เป็นระเบียบ แยกแต่ละการทำงานเป็นฟังก์ชั่นลดความซ้ำซ้อน และรองรับการใช้งานกับอุปกรณ์ได้หลากหลาย
                   </v-col>
                   <v-col :cols="12" class="text-center text-body-2 text-grey">
                     :: Vue.JS, JavaScript, HTML, CSS, Vuetify, Bootstrap, Responsive Web
@@ -50,17 +43,14 @@
               </v-col>
               <v-col :cols="12" :sm="6" :md="4" class="py-7">
                 <v-row no-gutters class="px-0 px-sm-6">
-                  <v-col :cols="12" class="text-center py-3">
-                    <v-icon :size="40" color="light-brown">fas fa-code-branch</v-icon>
-                  </v-col>
-                  <v-col :cols="12" class="text-center text-h6 text-grey-darken-2 pt-4 pb-2">
-                    ส่งมอบงาน
-                  </v-col>
-                  <v-col :cols="12" class="text-center text-body-2 text-grey pb-2">
+                  <v-col :cols="12" class="text-center text-h6 text-grey-darken-1 py-3">
                     DEPLOY
                   </v-col>
-                  <v-col :cols="12" class="text-center text-body-1 text-grey-darken-1 py-3">
-                    ตรวจสอบคุณภาพ Code ส่งมอบงานที่เกินความคาดหมาย ให้ผู้ใช้งานพึงพอใจ
+                  <v-col :cols="12" class="text-center pt-5 pb-6">
+                    <v-icon :size="40" color="grey-darken-1">fas fa-code-branch</v-icon>
+                  </v-col>
+                  <v-col :cols="12" class="text-center text-body-1 text-grey-darken-2 py-3">
+                    ตรวจสอบคุณภาพ, Review code ลดข้อผิดพลาด เพื่อส่งมอบงานที่ดีให้ผู้ใช้งาน
                   </v-col>
                   <v-col :cols="12" class="text-center text-body-2 text-grey">
                     :: Git Version Control, Eslint, SonarLint
@@ -69,18 +59,14 @@
               </v-col>
               <v-col :cols="12" :sm="6" :md="4" class="py-7">
                 <v-row no-gutters class="px-0 px-sm-6">
-                  <v-col :cols="12" class="text-center py-3">
-                    <v-icon :size="40" color="green-olive">fas fa-database</v-icon>
-                  </v-col>
-                  <v-col :cols="12" class="text-center text-h6 text-grey-darken-2 pt-4 pb-2">
-                    ฐานข้อมูล
-                  </v-col>
-                  <v-col :cols="12" class="text-center text-body-2 text-grey pb-2">
+                  <v-col :cols="12" class="text-center text-h6 text-grey-darken-1 py-3">
                     DATABASE
                   </v-col>
-                  <v-col :cols="12" class="text-center text-body-1 text-grey-darken-1 py-3">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim mi neque,
-                    sed tincidunt felis interdum a
+                  <v-col :cols="12" class="text-center pt-5 pb-6">
+                    <v-icon :size="40" color="grey-darken-1">fas fa-database</v-icon>
+                  </v-col>
+                  <v-col :cols="12" class="text-center text-body-1 text-grey-darken-2 py-3">
+                    ตรวจสอบวิเคราะห์ข้อมูล เขียนคำสั่ง SQL และเข้าใจ Data Dictionary
                   </v-col>
                   <v-col :cols="12" class="text-center text-body-2 text-grey">
                     :: Oracle, MySQL

@@ -1,5 +1,5 @@
 <template>
-  <v-container ref="contact" v-resize="setPosition" fluid class="px-0 py-8">
+  <v-container ref="contact" v-resize="setPosition" fluid class="px-0 pt-8 pb-16">
     <v-row no-gutters>
       <v-col :cols="12" :sm="11" :offset-sm="1" class="pl-10 pr-0 pl-sm-0 pr-sm-0 pr-md-10">
         <v-row no-gutters>

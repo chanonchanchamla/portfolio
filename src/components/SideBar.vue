@@ -18,7 +18,7 @@
     <v-slide-x-transition mode="out-in">
       <v-list v-if="menu && smAndDown" density="compact" nav>
         <v-list-item class="cursor-pointer" @click="scrollToAboutme()">
-          <span class="text-body-2 text-grey-darken-3 text-spacing-1">About me</span>
+          <span class="text-body-2 text-grey-darken-3 text-spacing-1">About</span>
         </v-list-item>
         <v-list-item class="cursor-pointer" @click="scrollToWorks()">
           <span class="text-body-2 text-grey-darken-3 text-spacing-1">Works</span>

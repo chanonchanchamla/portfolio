@@ -6,7 +6,7 @@
     <v-row v-if="mdAndUp" no-gutters justify="end" class="py-2">
       <v-col cols="auto" class="text-center my-2">
         <v-btn flat color="background" @click="scrollToAboutme()">
-          <span class="text-h6 text-body-1 text-grey-darken-2 text-spacing-1">About me</span>
+          <span class="text-h6 text-body-1 text-grey-darken-2 text-spacing-1">About</span>
         </v-btn>
       </v-col>
       <v-col cols="auto" class="text-center my-2">
