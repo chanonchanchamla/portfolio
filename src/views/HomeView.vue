@@ -32,7 +32,6 @@ export default defineComponent({
     }),
   },
   mounted() {
-    console.log(this.$refs)
     if (this.scrollToAfterEach == null) {
       return this.scrollToPosition(this.lastScroll)
     }

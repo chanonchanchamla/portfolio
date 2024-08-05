@@ -134,25 +134,6 @@
                   </v-col>
                 </v-row>
               </v-col>
-              <!-- <v-col :cols="12" :sm="6" :lg="4" class="py-5">
-                <v-row no-gutters class="px-0 px-sm-6">
-                  <v-col :cols="12" class="text-center py-3">
-                    <v-img
-                      :src="DocScanner" aspect-ratio="1.6" cover position="top left"
-                      width="80%" class="outlined rounded ma-auto cursor-pointer"
-                    />
-                  </v-col>
-                  <v-col :cols="12" class="text-center text-h6 text-grey-darken-2 pt-4">
-                    <span class="cursor-pointer">Components & Libraries</span>
-                  </v-col>
-                  <v-col :cols="12" class="text-center text-body-2 text-grey py-2">
-                    2021 - 2024
-                  </v-col> -->
-                  <!-- <v-col :cols="12" class="text-center text-body-2 text-grey-darken-1 py-3">
-                    Vue.JS Components และ JavaScript Libraries ต่าง ๆ ที่ทำขึ้นมาเพื่อแชร์ใช้ภายในองค์กร เช่น Document Scanner, Change Log, CSS Custom Theme, ส่วนประกอบต่าง ๆ บนหน้าจอ
-                  </v-col> -->
-                <!-- </v-row>
-              </v-col> -->
             </v-row>
           </v-col>
         </v-row>
@@ -179,9 +160,10 @@ export default {
       setPositionWorks: 'setPositionWorks',
     }),
     setPosition() {
+      console.log('resize')
       const { offsetTop } = this.$refs.works.$el
       if (this.mdAndUp) return this.setPositionWorks(offsetTop)
-      this.setPositionWorks(offsetTop + 100)
+      this.setPositionWorks(offsetTop)
     },
     go(project) {
       const { scrollTop } = document.documentElement

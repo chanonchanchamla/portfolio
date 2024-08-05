@@ -53,7 +53,6 @@ export default {
       position: (state) => state.position,
     }),
     routeHome() {
-      console.log(this.$route.name)
       const { name } = this.$route
       return name === 'home'
     },
@@ -68,18 +67,27 @@ export default {
     },
     scrollToAboutme() {
       const { aboutme } = this.position
+      this.menu = false
       if (this.routeHome === false) return this.goBackAndScroll('aboutme')
-      document.documentElement.scrollTo(0, aboutme)
+      setTimeout(() => {
+        document.documentElement.scrollTo(0, aboutme)
+      }, 300)
     },
     scrollToWorks() {
       const { works } = this.position
+      this.menu = false
       if (this.routeHome === false) return this.goBackAndScroll('works')
-      document.documentElement.scrollTo(0, works)
+      setTimeout(() => {
+        document.documentElement.scrollTo(0, works)
+      }, 300)
     },
     scrollToContact() {
       const { contact } = this.position
+      this.menu = false
       if (this.routeHome === false) return this.goBackAndScroll('contact')
-      document.documentElement.scrollTo(0, contact)
+      setTimeout(() => {
+        document.documentElement.scrollTo(0, contact)
+      }, 300)
     },
   },
 }
