@@ -62,3 +62,8 @@
 .rounded-smooth {
   border-radius: 20px;
 }
+
+.v-toolbar.v-toolbar--blur {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  backdrop-filter: blur(6px);
+}

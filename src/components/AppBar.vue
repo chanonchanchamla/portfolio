@@ -1,7 +1,7 @@
 <template>
   <v-app-bar
     v-if="showAppBar"
-    color="background" flat floating
+    flat floating class="v-toolbar--blur"
   >
     <v-row v-if="mdAndUp" no-gutters justify="end" class="py-2">
       <v-col cols="auto" class="text-center my-2">
