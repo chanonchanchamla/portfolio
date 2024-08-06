@@ -37,7 +37,7 @@
                     เข้าใจหลักการออกแบบ นำมาใช้ Coding อย่างพิถีพิถัน โครงสร้าง Code เป็นระเบียบ แยกแต่ละการทำงานเป็นฟังก์ชั่นลดความซ้ำซ้อน และรองรับการใช้งานกับอุปกรณ์ได้หลากหลาย
                   </v-col>
                   <v-col :cols="12" class="text-center text-body-2 text-grey">
-                    :: Vue.JS, JavaScript, HTML, CSS, Vuetify, Bootstrap, Responsive Web
+                    :: Vue.js, JavaScript, HTML, CSS, Vuetify, Bootstrap, Responsive Web
                   </v-col>
                 </v-row>
               </v-col>
