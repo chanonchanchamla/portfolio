@@ -12,7 +12,7 @@
             <p class="text-body-1 text-grey-darken-2 text-indent-1 text-lg-center">
               สวัสดีครับ ผมชานนท์ จันทร์แจ่มหล้า รักในการเขียน Front-End และออกแบบ UX/UI
               ประสบการณ์ 8 ปี ในการสร้างและออกแบบ Responsive Website ที่ใช้งานได้ง่าย
-              เชี่ยวชาญภาษา HTML, CSS, JavaScript, Vue.js และใช้ Figma เป็นเครื่องมือออกแบบ UX/UI
+              เชี่ยวชาญ HTML, CSS, JavaScript, Vue.js และใช้ Figma เป็นเครื่องมือออกแบบ UX/UI
             </p>
           </v-col>
         </v-row>

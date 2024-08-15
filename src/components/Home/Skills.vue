@@ -53,7 +53,7 @@
                     ตรวจสอบคุณภาพ, Review code ลดข้อผิดพลาด เพื่อส่งมอบงานที่ดีให้ผู้ใช้งาน
                   </v-col>
                   <v-col :cols="12" class="text-center text-body-2 text-grey">
-                    :: Git Version Control, Eslint, SonarLint
+                    :: Git Version Control, Eslint, SonarLint, CI/CD
                   </v-col>
                 </v-row>
               </v-col>
